@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="color-scheme" content="dark light" />
 		<title>Закрывающий тег</title>
-		<link rel="manifest" href="/manifest.webmanifest" />
+		<link rel="manifest" href="manifest.json" />
 		<link rel="icon" href="/favicon.ico" sizes="32x32" />
 		<link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
 		<link
@@ -49,7 +49,59 @@
 				</ul>
 			</nav>
 		</header>
-		<main></main>
+		<main>
+			<picture>
+				<source
+					srcset="
+						images/car1xd.avif 1x,
+						images/car2xd.avif 2x,
+						images/car3xd.avif 3x
+					"
+					media="(min-width: 696px)"
+					type="image/avif"
+				/>
+				<source
+					srcset="
+						images/car1xd.webp 1x,
+						images/car2xd.webp 2x,
+						images/car3xd.webp 3x
+					"
+					media="(min-width: 696px)"
+					type="image/webp"
+				/>
+				<source
+					srcset="
+						images/car1xd.png 1x,
+						images/car2xd.png 2x,
+						images/car3xd.png 3x
+					"
+					media="(min-width: 696px)"
+					type="image/png"
+				/>
+				<source
+					srcset="
+						images/car1x.avif 1x,
+						images/car2x.avif 2x,
+						images/car3x.avif 3x
+					"
+					type="image/avif"
+				/>
+				<source
+					srcset="
+						images/car1x.webp 1x,
+						images/car2x.webp 2x,
+						images/car3x.webp 3x
+					"
+					type="image/webp"
+				/>
+				<img
+					src="images/car1x.png"
+					srcset="images/car1x.png 1x, images/car2x.png 2x, images/car3x.png 3x"
+					alt="пиксельный фургон белого цвета с окнон в кузове ночью"
+					type="image/png"
+				/>
+			</picture>
+		</main>
 		<script src="./scripts/like.js"></script>
 	</body>
 </html>

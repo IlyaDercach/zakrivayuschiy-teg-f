@@ -10,6 +10,7 @@ const cssnano = require('cssnano');
 const del = require('del');
 // const concatcss = require('gulp-concat-css');
 // const concat = require('gulp-concat');
+const imagecomp = require('compress-images');
 
 function serve() {
 	browserSync.init({
@@ -76,11 +77,39 @@ function js() {
 }
 
 function images() {
-	return src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}')
+	return src('src/images/**/*', { encoding: false })
 		.pipe(plumber())
 		.pipe(dest('dist/images'))
 		.pipe(browserSync.reload({ stream: true }));
 }
+
+// async function images() {
+// 	imagecomp(
+// 		'src/images/**/*.{png, jpg, gif}', // Берём все изображения из папки источника
+// 		'dist/images/', // Выгружаем оптимизированные изображения в папку назначения
+// 		{ compress_force: false, autoupdate: true },
+// 		false, // Настраиваем основные параметры
+// 		{ jpg: { engine: 'mozjpeg', command: ['-quality', '75'] } }, // Сжимаем и оптимизируем изображеня
+// 		{ png: { engine: 'pngquant', command: ['--quality=75-100', '-o'] } },
+// 		{ svg: { engine: 'svgo', command: '--multipass' } },
+// 		{
+// 			gif: {
+// 				engine: 'gifsicle',
+// 				command: ['--colors', '64', '--use-col=web'],
+// 			},
+// 		},
+// 		function (err, completed) {
+// 			// Обновляем страницу по завершению
+// 			if (completed === true) {
+// 				browserSync.reload({ stream: true });
+// 			}
+// 		},
+// 	);
+
+// return src('src/images/**/*.{webp, avif}', { encoding: false })
+// 	.pipe(dest('dist/images'))
+// 	.pipe(browserSync.reload({ stream: true }));
+// }
 
 function svg() {
 	return src('src/svg/**/*.svg')
@@ -106,7 +135,7 @@ function watchFiles() {
 	watch(['src/styles/**/*.css'], css);
 	watch(['src/**/*.js'], js);
 	watch(['src/fonts/**/*'], fonts);
-	watch(['src/images/**/*.{jpg,png,gif,ico,webp,avif}'], images);
+	watch(['src/images/**/*'], images);
 	watch(['src/svg/**/*.svg'], svg);
 }
 
