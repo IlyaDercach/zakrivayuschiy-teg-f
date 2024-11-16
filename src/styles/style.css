@@ -15,6 +15,17 @@
 */
 
 .page {
+	font:
+		400 18px/1.17 var(--main-font-family, Inter),
+		sans-serif;
 	min-inline-size: 320px;
 	min-block-size: 100dvb;
+}
+
+@supports (font-variation-settings: normal) {
+	.page {
+		font:
+			var(--card-weight-text) 18px/1.17 var(--main-font-family, Inter),
+			sans-serif;
+	}
 }
