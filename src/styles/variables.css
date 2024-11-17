@@ -7,6 +7,9 @@
 
 	--font-main-family: 'Inter';
 	--font-second-family: 'Press-Start-2P';
+	--font-weight-title: var(--weight-b);
+	--font-weight-text: var(--weight-r);
+	/* переменные для карточки определить внутри самой карточки */
 	--font-card-weight-title: var(--weight-b);
 	--font-card-weight-text: var(--weight-r);
 

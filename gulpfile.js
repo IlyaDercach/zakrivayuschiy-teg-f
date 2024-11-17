@@ -8,7 +8,7 @@ const autoprefixer = require('autoprefixer');
 const postcssCombineMediaQuery = require('postcss-combine-media-query');
 const cssnano = require('cssnano');
 const del = require('del');
-// const concatcss = require('gulp-concat-css');
+const concatcss = require('gulp-concat-css');
 // const concat = require('gulp-concat');
 const imagecomp = require('compress-images');
 
@@ -54,11 +54,12 @@ function html() {
 }
 
 function css() {
-	const plugins = [autoprefixer(), postcssCombineMediaQuery(), cssnano()];
+	// const plugins = [autoprefixer(), postcssCombineMediaQuery(), cssnano()];
+	const plugins = [autoprefixer(), postcssCombineMediaQuery()];
 	return (
 		src('src/styles/**/*.css')
 			.pipe(plumber())
-			// .pipe(concatcss('style.css')) поочередно конкатенировать файлы
+			// .pipe(concatcss('style.css'))
 			.pipe(postcss(plugins))
 			.pipe(dest('dist/styles'))
 			.pipe(browserSync.reload({ stream: true }))
@@ -78,7 +79,6 @@ function js() {
 
 function images() {
 	return src('src/images/**/*', { encoding: false })
-		.pipe(plumber())
 		.pipe(dest('dist/images'))
 		.pipe(browserSync.reload({ stream: true }));
 }
