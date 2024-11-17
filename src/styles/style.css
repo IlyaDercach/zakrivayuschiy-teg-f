@@ -16,16 +16,18 @@
 
 .page {
 	font:
-		400 18px/1.17 var(--main-font-family, Inter),
+		400 18px/1.17 var(--font-main-family, Inter),
 		sans-serif;
 	min-inline-size: 320px;
 	min-block-size: 100dvb;
+	background-color: var(--color-page-bgc, #000);
+	color: var(--color-page-text, #00cc14);
 }
 
 @supports (font-variation-settings: normal) {
 	.page {
 		font:
-			var(--card-weight-text) 18px/1.17 var(--main-font-family, Inter),
+			var(--font-card-weight-text) 18px/1.17 var(--font-main-family, Inter),
 			sans-serif;
 	}
 }

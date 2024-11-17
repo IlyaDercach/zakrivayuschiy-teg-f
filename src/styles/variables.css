@@ -1,6 +1,16 @@
 :root {
-	--main-font-family: 'Inter';
-	--accent-font-family: 'Press-Start-2P';
-	--card-weight-title: 785;
-	--card-weight-text: 465;
+	--lime: #00cc14;
+	--black: #000;
+	--white: #fff;
+	--weight-b: 785;
+	--weight-r: 465;
+
+	--font-main-family: 'Inter';
+	--font-second-family: 'Press-Start-2P';
+	--font-card-weight-title: var(--weight-b);
+	--font-card-weight-text: var(--weight-r);
+
+	--color-page-text: var(--lime);
+	--color-page-accent: var(--lime);
+	--color-page-bgc: var(--black);
 }
