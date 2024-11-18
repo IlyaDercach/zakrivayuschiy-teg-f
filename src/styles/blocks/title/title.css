@@ -12,5 +12,5 @@
 }
 
 .text-variant-one {
-	font-size: 14px;
+	font-size: var(--font-small);
 }

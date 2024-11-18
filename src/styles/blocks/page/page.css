@@ -1,8 +1,9 @@
 .page {
 	--color-page-text: var(--accent-color);
+	--main-font-size: var(--font-small);
 
 	font:
-		400 18px/1 var(--font-main-family, Inter),
+		400 var(--main-font-size, 18px) / 1 var(--font-main-family, Inter),
 		sans-serif;
 	color: var(--color-page-text, #00cc14);
 	background: cover fixed var(--color-background, #000);

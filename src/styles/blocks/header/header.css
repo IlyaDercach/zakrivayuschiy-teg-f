@@ -3,7 +3,7 @@
 	padding-block: 100px;
 }
 
-.header__wrapper {
+.header__section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .header__subtitle {
-	padding-block-start: 20px;
+	padding-block-start: 21px;
 }
 
 .header__theme-menu {
