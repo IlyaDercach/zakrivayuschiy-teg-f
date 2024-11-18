@@ -1,3 +1,16 @@
 .title {
-	font-size: 40px;
+	/* 49 */
+	font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.title_style {
+	--font-weight: var(--weight-rs);
+
+	font-weight: var(--font-weight);
+	font-family: var(--font-second-family, 'Press-Start-2P'), monospace;
+	text-transform: uppercase;
+}
+
+.text-variant-one {
+	font-size: 14px;
 }

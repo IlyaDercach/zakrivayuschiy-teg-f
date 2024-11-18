@@ -4,18 +4,20 @@
 	--white: #fff;
 	--weight-b: 785;
 	--weight-r: 465;
-
+	--weight-bs: 700;
+	--weight-rs: 400;
 	--font-main-family: 'Inter';
 	--font-second-family: 'Press-Start-2P';
+
+	--accent-color: var(--lime);
+	--color-background: var(--black);
+	--color-border: var(--lime);
+
 	--font-weight-title: var(--weight-b);
 	--font-weight-text: var(--weight-r);
-	/* переменные для карточки определить внутри самой карточки */
+
 	--font-card-weight-title: var(--weight-b);
 	--font-card-weight-text: var(--weight-r);
-
-	--color-page-text: var(--lime);
-	--color-page-accent: var(--lime);
-	--color-page-bgc: var(--black);
 
 	--background-gradient: repeating-linear-gradient(
 			90deg,

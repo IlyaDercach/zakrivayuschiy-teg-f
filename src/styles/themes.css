@@ -1,13 +1,26 @@
 :root.theme-dark {
+	--accent-color: var(--lime);
 	--font-weight-title: var(--weight-b);
 	--font-weight-text: var(--weight-r);
 
 	--color-page-text: var(--lime);
 	--color-page-accent: var(--lime);
 	--color-page-bgc: var(--black);
+
+	--color-background: var(--black);
+	--color-border: var(--lime);
+
+	--background-gradient: repeating-linear-gradient(
+			90deg,
+			#000 0 2px,
+			rgb(0 0 0 / 0) 2px 4px
+		),
+		repeating-linear-gradient(180deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+		linear-gradient(180deg, #007f0c 0%, #004306 100%);
 }
 
 :root.theme-light {
+	--accent-color: var(--black);
 	--weight-b: 700;
 	--weight-r: 400;
 
@@ -17,6 +30,9 @@
 	--color-page-text: var(--black);
 	--color-page-accent: var(--black);
 	--color-page-bgc: var(--white);
+
+	--color-background: var(--white);
+	--color-border: var(--black);
 
 	--background-gradient: repeating-linear-gradient(
 			90deg,
@@ -29,6 +45,7 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
+		--accent-color: var(--black);
 		--weight-b: 700;
 		--weight-r: 400;
 
@@ -38,6 +55,9 @@
 		--color-page-text: var(--black);
 		--color-page-accent: var(--black);
 		--color-page-bgc: var(--white);
+
+		--color-background: var(--white);
+		--color-border: var(--black);
 
 		--background-gradient: repeating-linear-gradient(
 				90deg,

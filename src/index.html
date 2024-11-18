@@ -23,31 +23,34 @@
 	</head>
 	<body class="page">
 		<header class="header">
-			<nav class="theme-menu header__theme-menu">
-				<!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-				<ul class="theme-menu__list">
-					<li class="theme-menu__item">
-						<button type="button" data-theme="dark" class="theme-menu__button">
-							Темно
-						</button>
-					</li>
-					<li class="theme-menu__item">
-						<button
-							type="button"
-							data-theme="auto"
-							disabled
-							class="theme-menu__button"
-						>
-							Авто
-						</button>
-					</li>
-					<li class="theme-menu__item">
-						<button type="button" data-theme="light" class="theme-menu__button">
-							Светло
-						</button>
-					</li>
-				</ul>
-			</nav>
+			<div class="header__wrapper">
+				<h1 class="title title_style header__title">&lt;/html&gt;</h1>
+				<h2 class="text-variant-one title_style header__subtitle">закрывающий тег</h2>
+				<nav class="text-variant-one theme-menu header__theme-menu">
+					<ul class="title_style theme-menu__list">
+						<li class="theme-menu__item">
+							<button type="button" data-theme="dark" class="theme-menu__button">
+								Темно
+							</button>
+						</li>
+						<li class="theme-menu__item">
+							<button
+								type="button"
+								data-theme="auto"
+								disabled
+								class="theme-menu__button"
+							>
+								Авто
+							</button>
+						</li>
+						<li class="theme-menu__item">
+							<button type="button" data-theme="light" class="theme-menu__button">
+								Светло
+							</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<div style="width: 300px">
@@ -103,7 +106,6 @@
 					/>
 				</picture>
 			</div>
-			<!-- <img src="./images/m-background-dark.png" alt="e"> -->
 			<svg>
 				<use href="./svg/floppy.svg#floppy">
 			</svg>
