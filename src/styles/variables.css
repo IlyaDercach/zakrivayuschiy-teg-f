@@ -15,12 +15,6 @@
 	--color-background: var(--black);
 	--color-border: var(--lime);
 
-	--font-weight-title: var(--weight-b);
-	--font-weight-text: var(--weight-r);
-
-	--font-card-weight-title: var(--weight-b);
-	--font-card-weight-text: var(--weight-r);
-
 	--background-gradient: repeating-linear-gradient(
 			90deg,
 			#000 0 2px,

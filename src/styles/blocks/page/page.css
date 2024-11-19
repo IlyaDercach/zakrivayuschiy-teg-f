@@ -1,6 +1,8 @@
 .page {
 	--color-page-text: var(--accent-color);
-	--main-font-size: var(--font-small);
+	--color-border: var(--accent-color);
+	--main-font-size: var(--font-small-plus);
+	--font-weight-text: var(--weight-r);
 
 	font:
 		400 var(--main-font-size, 18px) / 1 var(--font-main-family, Inter),
@@ -20,4 +22,10 @@
 		font-weight: var(--font-weight-text);
 		font-family: var(--font-main-family, Inter), sans-serif;
 	}
+}
+
+.border-block {
+	/* box-sizing: border-box; */
+	border: 2px solid var(--color-border);
+	/* outline-offset: 2px; */
 }

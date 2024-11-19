@@ -1,12 +1,17 @@
 :root.theme-dark {
+	--lime: #00cc14;
+	--black: #000;
+	--white: #fff;
+	--weight-b: 785;
+	--weight-r: 465;
+	--weight-bs: 700;
+	--weight-rs: 400;
+	--font-small: 14px;
+	--font-small-plus: 18px;
+	--font-main-family: 'Inter';
+	--font-second-family: 'Press-Start-2P';
+
 	--accent-color: var(--lime);
-	--font-weight-title: var(--weight-b);
-	--font-weight-text: var(--weight-r);
-
-	--color-page-text: var(--lime);
-	--color-page-accent: var(--lime);
-	--color-page-bgc: var(--black);
-
 	--color-background: var(--black);
 	--color-border: var(--lime);
 
@@ -20,17 +25,9 @@
 }
 
 :root.theme-light {
-	--accent-color: var(--black);
 	--weight-b: 700;
 	--weight-r: 400;
-
-	--font-weight-title: var(--weight-b);
-	--font-weight-text: var(--weight-r);
-
-	--color-page-text: var(--black);
-	--color-page-accent: var(--black);
-	--color-page-bgc: var(--white);
-
+	--accent-color: var(--black);
 	--color-background: var(--white);
 	--color-border: var(--black);
 
@@ -45,17 +42,9 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--accent-color: var(--black);
 		--weight-b: 700;
 		--weight-r: 400;
-
-		--font-weight-title: var(--weight-b);
-		--font-weight-text: var(--weight-r);
-
-		--color-page-text: var(--black);
-		--color-page-accent: var(--black);
-		--color-page-bgc: var(--white);
-
+		--accent-color: var(--black);
 		--color-background: var(--white);
 		--color-border: var(--black);
 

@@ -1,0 +1,53 @@
+.card__item {
+	--background-color: var(--color-background);
+
+	background-color: var(--background-color);
+}
+
+.card__title {
+	--font-size: var(--font-small-plus);
+	--font-weight: var(--weight-b);
+
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
+	line-height: 1.46;
+	padding-inline: 10px;
+}
+
+.card__image-wrapper {
+	border-block: none;
+	block-size: 371px;
+}
+
+.card__block {
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	gap: 27px;
+	line-height: 1.17;
+}
+
+.card__button-block {
+	display: flex;
+	justify-content: end;
+	gap: 13px;
+}
+
+.card__button {
+	padding: 10px 35px;
+	margin-inline-end: 2px;
+}
+
+.card__heart {
+	inline-size: 27px;
+	block-size: 24px;
+}
+
+/* .card__image {
+	position: relative;
+}
+
+.card__image::before{
+	position: absolute;
+	content
+} */

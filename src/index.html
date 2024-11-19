@@ -23,7 +23,7 @@
 	</head>
 	<body class="page">
 		<header class="header">
-			<section class="header__section">
+			<section class="border-block header__section">
 				<h1 class="title title_style header__title">&lt;/html&gt;</h1>
 				<h2 class="text-variant-one title_style header__subtitle">закрывающий тег</h2>
 				<nav class="text-variant-one theme-menu header__theme-menu">
@@ -53,59 +53,83 @@
 			</section>
 		</header>
 		<main>
-			<div style="width: 300px">
-				<picture>
-					<source
-						srcset="
-							images/car1xd.avif 1x,
-							images/car2xd.avif 2x,
-							images/car3xd.avif 3x
-						"
-						media="(min-width: 696px)"
-						type="image/avif"
-					/>
-					<source
-						srcset="
-							images/car1xd.webp 1x,
-							images/car2xd.webp 2x,
-							images/car3xd.webp 3x
-						"
-						media="(min-width: 696px)"
-						type="image/webp"
-					/>
-					<source
-						srcset="
-							images/car1xd.png 1x,
-							images/car2xd.png 2x,
-							images/car3xd.png 3x
-						"
-						media="(min-width: 696px)"
-						type="image/png"
-					/>
-					<source
-						srcset="
-							images/car1x.avif 1x,
-							images/car2x.avif 2x,
-							images/car3x.avif 3x
-						"
-						type="image/avif"
-					/>
-					<source
-						srcset="
-							images/car1x.webp 1x,
-							images/car2x.webp 2x,
-							images/car3x.webp 3x
-						"
-						type="image/webp"
-					/>
-					<img
-						src="images/car1x.png"
-						srcset="images/car1x.png 1x, images/car2x.png 2x, images/car3x.png 3x"
-						alt="пиксельный фургон белого цвета с окнон в кузове ночью"
-						type="image/png"
-					/>
-				</picture>
-			</div>
+
+			<ul class="card card__list">
+				<li>
+					<article class="card__item">
+						<h3 class="border-block card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+						<div class="border-block card__image-wrapper">
+							<picture>
+								<source
+									srcset="
+										images/car1xd.avif 1x,
+										images/car2xd.avif 2x,
+										images/car3xd.avif 3x
+									"
+									media="(min-width: 696px)"
+									type="image/avif"
+								/>
+								<source
+									srcset="
+										images/car1xd.webp 1x,
+										images/car2xd.webp 2x,
+										images/car3xd.webp 3x
+									"
+									media="(min-width: 696px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="
+										images/car1xd.png 1x,
+										images/car2xd.png 2x,
+										images/car3xd.png 3x
+									"
+									media="(min-width: 696px)"
+									type="image/png"
+								/>
+								<source
+									srcset="
+										images/car1x.avif 1x,
+										images/car2x.avif 2x,
+										images/car3x.avif 3x
+									"
+									type="image/avif"
+								/>
+								<source
+									srcset="
+										images/car1x.webp 1x,
+										images/car2x.webp 2x,
+										images/car3x.webp 3x
+									"
+									type="image/webp"
+								/>
+								<img
+									class="card__image"
+									src="images/car1x.png"
+									srcset="images/car1x.png 1x, images/car2x.png 2x, images/car3x.png 3x"
+									alt="пиксельный фургон белого цвета с окнон в кузове ночью"
+									type="image/png"
+								/>
+							</picture>
+						</div>
+						<div class="border-block card__block">
+							<p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+							<p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
+							<div class="card__button-block">
+								<button class="card__icon-button">
+									<svg class="like-icon card__heart">
+										<use href="./svg/heart.svg#heart" />
+									</svg>
+								</button>
+								<button class="card__like-button button card__button">
+									<span class="button__text">like</span>
+								</button>
+							</div>
+						</div>
+					</article>
+				</li>
+			</ul>
+
 			<svg>
 				<use href="./svg/floppy.svg#floppy">
 			</svg>

@@ -1,0 +1,15 @@
+.button {
+	--font-size: var(--font-small);
+	--font-family: var(--font-second-family);
+	--border-color: var(--accent-color);
+
+	display: block;
+	font:
+		0.8em var(--font-family, 'Press-Start-2P'),
+		monospace;
+	outline: 2px solid var(--border-color);
+}
+
+.button::first-letter {
+	text-transform: uppercase;
+}

@@ -1,7 +1,4 @@
 .theme-menu {
-	/* font-family: var(--font-second-family, mospace);
-	font-size: 14px; */
-	/* text-transform: none; */
 	padding-inline-start: 20px;
 }
 
@@ -12,5 +9,13 @@
 }
 
 .theme-menu__button {
+	position: relative;
 	text-transform: uppercase;
+}
+
+.theme-menu__button:disabled::before {
+	content: '▶';
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: -20px;
 }
