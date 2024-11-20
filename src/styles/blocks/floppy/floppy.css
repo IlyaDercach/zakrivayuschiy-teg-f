@@ -1,0 +1,20 @@
+.floppy {
+	padding: 15px 20px;
+	display: flex;
+	flex-direction: column-reverse;
+	place-items: center;
+	margin-block-start: 52px;
+}
+
+.floppy__text {
+	margin-block-start: 8px;
+}
+
+.floppy__svg {
+	color: #f0d;
+	fill: #f0d;
+}
+
+.floppy__svg:hover {
+	color: #f0d;
+}

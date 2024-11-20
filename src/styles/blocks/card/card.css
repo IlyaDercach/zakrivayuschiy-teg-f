@@ -1,3 +1,9 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 52px;
+}
+
 .card__item {
 	--background-color: var(--color-background);
 
@@ -42,12 +48,3 @@
 	inline-size: 27px;
 	block-size: 24px;
 }
-
-/* .card__image {
-	position: relative;
-}
-
-.card__image::before{
-	position: absolute;
-	content
-} */

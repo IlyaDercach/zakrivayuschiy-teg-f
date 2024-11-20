@@ -8,8 +8,9 @@
 		0.8em var(--font-family, 'Press-Start-2P'),
 		monospace;
 	outline: 2px solid var(--border-color);
+	background-color: var(--color-background);
 }
 
-.button::first-letter {
+.button__text::first-letter {
 	text-transform: uppercase;
 }

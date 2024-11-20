@@ -14,7 +14,7 @@
 	min-block-size: 100dvb;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	place-items: center;
+	justify-content: center;
 }
 
 @supports (font-variation-settings: normal) {
