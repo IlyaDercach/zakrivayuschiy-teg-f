@@ -19,6 +19,7 @@
 	position: absolute;
 	inset-block-start: 0;
 	inset-inline-start: -20px;
+	animation: menu-item-arrow 0.5s ease-in-out infinite alternate;
 }
 
 .theme-menu__button:disabled {
