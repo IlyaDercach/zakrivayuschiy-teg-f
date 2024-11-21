@@ -21,6 +21,7 @@
 }
 
 .card__image-wrapper {
+	position: relative;
 	border-block: none;
 	block-size: 371px;
 }
@@ -47,4 +48,29 @@
 .card__heart {
 	inline-size: 27px;
 	block-size: 24px;
+}
+
+.card__image-label {
+	--text-stroke-color: var(--color-text-stroke-label);
+
+	position: absolute;
+	inset-inline-end: 12px;
+	inset-block-start: 24px;
+	mix-blend-mode: hard-light;
+	text-shadow:
+		-1px 0 var(--text-stroke-color, #000),
+		1px 0 var(--text-stroke-color, #000),
+		0 -1px var(--text-stroke-color, #000),
+		0 1px var(--text-stroke-color, #000);
+}
+
+@supports (
+	(text-stroke: 1px var(--text-stroke-color, #000)) or
+		(-webkit-text-stroke: 1px var(--text-stroke-color, #000))
+) {
+	.card__image-label {
+		-webkit-text-stroke: 1px var(--text-stroke-color, #000);
+		text-stroke: 1px var(--text-stroke-color, #000);
+		text-shadow: none;
+	}
 }
