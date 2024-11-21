@@ -11,6 +11,7 @@
 .theme-menu__button {
 	position: relative;
 	text-transform: uppercase;
+	transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -18,4 +19,41 @@
 	position: absolute;
 	inset-block-start: 0;
 	inset-inline-start: -20px;
+}
+
+.theme-menu__button:disabled {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.theme-menu__button:hover {
+	opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+	outline: none;
+	opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible {
+	outline: none;
+}
+
+.theme-menu__button::after {
+	--color-line: var(--accent-color);
+
+	content: '';
+	position: absolute;
+	inset-block-end: -3px;
+	inset-inline-start: 0;
+	inline-size: 100%;
+	outline: 2px solid var(--color-line);
+	background-color: var(--color-line, #00cc14);
+	opacity: 0.6;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+	transform: scaleX(1);
 }
