@@ -37,17 +37,37 @@
 .card__button-block {
 	display: flex;
 	justify-content: end;
-	gap: 13px;
+	gap: 8px;
+	block-size: 34px;
 }
 
 .card__button {
-	padding: 10px 35px;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	inline-size: 126px;
 	margin-inline-end: 2px;
 }
 
 .card__heart {
-	inline-size: 27px;
-	block-size: 24px;
+	block-size: 100%;
+	aspect-ratio: 1/1;
+}
+
+.card__heart:focus {
+	outline: none;
+}
+
+.card__icon-button {
+	transition: outline 0.3 ease;
+}
+
+.card__icon-button:focus {
+	outline: none;
+}
+
+.card__icon-button:focus-visible {
+	outline: 2px solid var(--accent-color);
 }
 
 .card__image-label {

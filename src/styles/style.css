@@ -1,5 +1,7 @@
 @import url(./blocks/page/page.css);
 
+@import url(./blocks/animations/animations.css);
+
 @import url(./blocks/button/button.css);
 
 @import url(./blocks/title/title.css);
@@ -13,3 +15,5 @@
 @import url(./blocks/floppy/floppy.css);
 
 @import url(./blocks/main/main.css);
+
+@import url(./blocks/heart/heart.css);

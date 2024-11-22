@@ -11,10 +11,9 @@
 }
 
 .floppy__svg {
-	color: #f0d;
-	fill: #f0d;
-}
-
-.floppy__svg:hover {
-	color: #f0d;
+	--color-svg: var(--color-button-text);
+	color: var(--color-svg);
+	width: 28px;
+	height: 28px;
+	mix-blend-mode: difference;
 }
