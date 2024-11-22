@@ -72,6 +72,7 @@
 
 .card__image-label {
 	--text-stroke-color: var(--color-text-stroke-label);
+	z-index: 10;
 
 	position: absolute;
 	inset-inline-end: 12px;
@@ -93,4 +94,36 @@
 		text-stroke: 1px var(--text-stroke-color, #000);
 		text-shadow: none;
 	}
+}
+
+.img-filter-brightness {
+	filter: brightness(72%);
+}
+
+.img-filter-contrast {
+	filter: contrast(22%);
+}
+
+.img-filter-blur {
+	filter: blur(2px);
+}
+
+.img-filter-opacity {
+	filter: opacity(0.6);
+}
+
+.img-filter-grayscale {
+	filter: grayscale(0.8);
+}
+
+.img-filter-saturate {
+	filter: saturate(1121%);
+}
+
+.img-filter-sepia {
+	filter: sepia(90%);
+}
+
+.img-filter-combo {
+	filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
 }
