@@ -55,6 +55,12 @@ img {
 	object-fit: cover;
 }
 
+img,
+video,
+canvas {
+	overflow: hidden;
+}
+
 .visually-hidden {
 	position: absolute;
 	inline-size: 1px;

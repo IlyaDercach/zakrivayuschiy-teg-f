@@ -16,9 +16,13 @@
 	--color-background: var(--black);
 	--color-border: var(--lime);
 	--color-text-stroke-label: var(--black);
-	--color-heart-icon-contour: var(var(--accent-color));
+	--color-button-text: var(--lime);
+	--color-heart-icon-contour: var(--accent-color);
 	--color-heart-icon-main-body: var(--red);
 	--color-heart-icon-sparks: var(--red);
+
+	--color-heart-icon: var(--red);
+	--color-heart-icon-core: var(--white);
 
 	--background-gradient: repeating-linear-gradient(
 			90deg,
@@ -42,6 +46,8 @@
 	--color-heart-icon: var(--red);
 	--color-heart-icon-sparks: var(--red);
 
+	--color-heart-icon-core: var(--black);
+
 	--background-gradient: repeating-linear-gradient(
 			90deg,
 			#d3d3d3 0 2px,
@@ -62,8 +68,10 @@
 		--color-text-stroke-label: var(--white);
 		--color-button-text: var(--white);
 		--color-heart-icon-contour: var(var(--accent-color));
-		--color-heart-icon-main-body: var(--red);
+		--color-heart-icon: var(--red);
 		--color-heart-icon-sparks: var(--red);
+
+		--color-heart-icon-core: var(--black);
 
 		--background-gradient: repeating-linear-gradient(
 				90deg,

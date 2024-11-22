@@ -1,5 +1,5 @@
 .header {
-	inline-size: 100%;
+	inline-size: clamp(375px, 100%, 696px);
 	padding-block: 100px;
 }
 

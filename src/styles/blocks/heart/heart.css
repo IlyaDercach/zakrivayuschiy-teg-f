@@ -19,7 +19,7 @@
 }
 
 .like-icon:hover .core {
-	fill: var(--color-heart-icon-contour);
+	fill: var(--color-heart-icon-core, #fff);
 	transition: fill 0.3s;
 }
 
