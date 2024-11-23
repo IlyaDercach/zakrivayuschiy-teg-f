@@ -25,7 +25,5 @@
 }
 
 .border-block {
-	/* box-sizing: border-box; */
 	border: 2px solid var(--color-border);
-	/* outline-offset: 2px; */
 }

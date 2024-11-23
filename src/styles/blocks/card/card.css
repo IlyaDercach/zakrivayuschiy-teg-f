@@ -16,7 +16,7 @@
 	--font-weight: var(--weight-b);
 
 	font-size: var(--font-size);
-	font-weight: var(--font-weight);
+	font-variation-settings: 'wght' var(--font-weight);
 	line-height: 1.46;
 	padding-inline: 10px;
 }
@@ -24,7 +24,8 @@
 .card__image-wrapper {
 	position: relative;
 	border-block: none;
-	block-size: 371px;
+	inline-size: 100%;
+	height: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
 .card__block {
@@ -39,7 +40,6 @@
 	display: flex;
 	justify-content: end;
 	gap: 8px;
-	block-size: 34px;
 }
 
 .card__button {
@@ -74,6 +74,7 @@
 .card__image-label {
 	--text-stroke-color: var(--color-text-stroke-label);
 	z-index: 10;
+	opacity: 0.5;
 
 	position: absolute;
 	inset-inline-end: 12px;

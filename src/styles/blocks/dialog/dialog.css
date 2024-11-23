@@ -4,7 +4,7 @@
 	position: fixed;
 	inset-block-start: 50%;
 	transform: translateY(-50%);
-	max-inline-size: 341px;
+	max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 	margin: 0 auto;
 	padding: 30px 42px;
 	z-index: 10;
@@ -45,4 +45,14 @@ dialog::backdrop {
 dialog:not([open]) {
 	opacity: 0;
 	pointer-events: none;
+}
+
+@media (width >= 1440px) {
+	.dialog {
+		padding: 30px;
+	}
+
+	.dialog__wrapper {
+		margin-block-end: 20px;
+	}
 }

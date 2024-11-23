@@ -6,11 +6,11 @@
 .title_style {
 	--font-weight: var(--weight-rs);
 
-	font-weight: var(--font-weight);
+	font-variation-settings: 'wght' var(--font-weight, 400);
 	font-family: var(--font-second-family, 'Press-Start-2P'), monospace;
 	text-transform: uppercase;
 }
 
-.text-variant-one {
+.text-variant {
 	font-size: var(--font-small);
 }

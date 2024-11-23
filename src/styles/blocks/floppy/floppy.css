@@ -2,6 +2,7 @@
 	padding: 15px 20px;
 	display: flex;
 	flex-direction: column-reverse;
+	flex-wrap: wrap;
 	place-items: center;
 	margin-block-start: 52px;
 }
@@ -16,4 +17,17 @@
 	width: 28px;
 	height: 28px;
 	mix-blend-mode: difference;
+}
+
+@media (width >= 1440px) {
+	.floppy_desktop {
+		flex-direction: row-reverse;
+		gap: 8px;
+		padding-inline: 19px;
+	}
+
+	.floppy__svg {
+		width: 21px;
+		height: 21px;
+	}
 }

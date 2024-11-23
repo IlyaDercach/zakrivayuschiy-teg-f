@@ -1,17 +1,4 @@
 :root.theme-dark {
-	--lime: #00cc14;
-	--black: #000;
-	--white: #fff;
-	--red: #f00;
-	--weight-b: 785;
-	--weight-r: 465;
-	--weight-bs: 700;
-	--weight-rs: 400;
-	--font-small: 14px;
-	--font-small-plus: 18px;
-	--font-main-family: 'Inter';
-	--font-second-family: 'Press-Start-2P';
-
 	--accent-color: var(--lime);
 	--color-background: var(--black);
 	--color-border: var(--lime);
@@ -22,7 +9,7 @@
 	--color-heart-icon-sparks: var(--red);
 
 	--color-heart-icon: var(--red);
-	--color-heart-icon-core: var(--white);
+	--color-heart-icon-core: var(--lime);
 
 	--background-gradient: repeating-linear-gradient(
 			90deg,
@@ -51,10 +38,10 @@
 	--background-gradient: repeating-linear-gradient(
 			90deg,
 			#d3d3d3 0 2px,
-			rgb(0 0 0 / 0) 2px 4px
+			transparent 2px 4px
 		),
-		repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-		linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+		repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+		linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
 
 @media (prefers-color-scheme: light) {
