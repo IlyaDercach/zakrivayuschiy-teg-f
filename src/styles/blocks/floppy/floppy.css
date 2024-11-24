@@ -26,6 +26,10 @@
 		padding-inline: 19px;
 	}
 
+	.floppy__text {
+		margin-block-start: 0;
+	}
+
 	.floppy__svg {
 		width: 21px;
 		height: 21px;
