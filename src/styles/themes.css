@@ -1,4 +1,6 @@
 :root.theme-dark {
+	--weight-b: 785;
+	--weight-r: 465;
 	--accent-color: var(--lime);
 	--color-background: var(--black);
 	--color-border: var(--lime);

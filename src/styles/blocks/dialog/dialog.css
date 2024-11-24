@@ -6,21 +6,25 @@
 	transform: translateY(-50%);
 	max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 	margin: 0 auto;
-	padding: 30px 42px;
+	padding: 30px 40px;
 	z-index: 10;
 	transition: opacity 0.5s ease;
 }
 
 .dialog__wrapper {
 	display: flex;
-	gap: 2px;
-	margin-block-end: 30px;
+	gap: 6px;
+	margin-block-end: 26px;
+}
+
+.svg-wrapper {
+	padding-block-start: 10px;
+	align-self: center;
 }
 
 .dialog__floppy {
-	width: 55px;
+	width: 54px;
 	height: 55px;
-	margin-block-start: 15px;
 }
 
 .dialog__text {
@@ -32,10 +36,17 @@
 }
 
 .dialog__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-transform: uppercase;
 	inline-size: 100%;
-	padding-block: 8px;
+	padding-block: 9px;
 	margin: 0;
+}
+
+.button__text {
+	line-height: 1;
 }
 
 dialog::backdrop {
@@ -53,6 +64,6 @@ dialog:not([open]) {
 	}
 
 	.dialog__wrapper {
-		margin-block-end: 20px;
+		margin-block-end: 25px;
 	}
 }

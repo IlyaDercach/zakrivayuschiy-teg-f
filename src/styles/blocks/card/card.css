@@ -16,7 +16,8 @@
 	--font-weight: var(--weight-b);
 
 	font-size: var(--font-size);
-	font-variation-settings: 'wght' var(--font-weight);
+	font-weight: var(--font-weight, 785);
+	font-variation-settings: 'wght' var(--font-weight, 785);
 	line-height: 1.46;
 	padding-inline: 10px;
 }
